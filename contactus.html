@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABDC | Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="contactus.css" />
+
+    <style>
+      body {
+          font-family: DM Sans, var(--default-font-family);
+          font-size: 24px;
+          margin: 20px;
+      }
+      .form-group {
+          margin-bottom: 15px;
+      }
+      label {
+          display: block;
+          margin-bottom: 5px;
+      }
+      input, textarea {
+        width: 544px;
+        max-width: 544px;
+        padding: 16px;
+        border: 3px solid #6f6f6f;
+        border-radius: 16px;
+        font-family: DM Sans, var(--default-font-family);
+        font-size: 16px;
+      }
+      /*.button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }*/
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navigation">
+        <!-- <div class="logo-abdc"></div> -->
+        <a href="index.html" class="logo-abdc"></a>
+        <div class="nav-item">
+          <span class="about-us"><a href="Aboutus.html">About Us</a></span
+          ><span class="services"><a href="/services.html">Services</a></span
+          ><span class="contact-us"><a href="contactus.html">Contact Us</a></span
+          ><span class="work"><a href="ourwork.html">Work</a></span>
+          <span class="blog"><a href="Blog.html">Blog</a></span>
+        </div>
+        <div class="icon">
+          <div class="search"><div class="icon-1"></div></div>
+        </div>
+      </div>
+      <div class="consulting-header">
+        <div class="frame">
+          <div class="frame-2">
+            <span class="collaborate-text"
+              >Let’s collaborate on what<br />matters to you</span
+            >
+          </div>
+          <div class="frame-3">
+            <div class="contact-info">
+              <span class="contact-info-4"
+                >Contact us to discuss business opportunities, or just to<br />say
+                hello. Use the form below or send us an email at<br /></span
+              ><span class="email">info@abdulkadeerandco.com</span
+              ><span class="contact-info-5">.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <div class="frame-6">
+
+
+
+          <form id="contactForm">
+            <div class="form-group">
+                <label for="name">What is your name?</label>
+                <input type="text" id="name" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+                <label for="company">What is your company's name?</label>
+                <input type="text" id="company" placeholder="Company name" required>
+            </div>
+            <div class="form-group">
+                <label for="help">How can we help you?</label>
+                <textarea id="help" placeholder="Describe your challenges" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="email">What is your email address?</label>
+                <input type="email" id="email" placeholder="Email address" required>
+            </div>
+            <button type="button" class="button" onclick="submitForm()">Send message</button>
+            <div class="frame-17">
+              <div class="send-message-agreement">
+                <span class="send-message-text"
+                  >By clicking on “Send Message” button, you agree to our </span
+                ><span class="privacy-policy">Privacy Policy</span
+                ><span class="send-message-text-18">, and allow </span
+                ><span class="use-information">ABDC</span
+                ><span class="send-message-text-19">
+                  to<br />use this information for marketing purposes.
+                </span>
+              </div>
+            </div>
+        </form>
+
+
+        <!--
+          <div class="form-7">
+            <div class="form-item">
+              <div class="frame-8">
+                <span class="what-is-your-name">What is your name?</span>
+              </div>
+              <div class="frame-9">
+                <input class="frame-input" /><span class="full-name"
+                  >Full name</span
+                >
+              </div>
+            </div>
+            <div class="form-item-a">
+              <div class="frame-b">
+                <span class="what-is-your-company-name"
+                  >What is your company’s name?</span
+                >
+              </div>
+              <div class="frame-c">
+                <input class="frame-input-d" /><span class="company"
+                  >Company</span
+                >
+              </div>
+            </div>
+            <div class="form-item-e">
+              <div class="frame-f">
+                <span class="how-can-we-help-you">How can we help you?</span>
+              </div>
+              <div class="frame-10">
+                <input class="frame-input-11" /><span
+                  class="describe-your-challenges"
+                  >Describe your challenges...<br /><br /><br /><br /><br /><br
+                /></span>
+              </div>
+            </div>
+            <div class="form-item-12">
+              <div class="frame-13">
+                <span class="what-is-your-email-address"
+                  >What is your email address?</span
+                >
+              </div>
+              <div class="frame-14">
+                <input class="frame-input-15" /><span class="email-address"
+                  >Email address</span
+                >
+              </div>
+            </div>
+          </div>
+        
+          <div class="frame-16">
+            <button type="button" class="button" id="submitButton" class="button">
+              <span class="send-message">Send Message</span>
+            </button>
+            <div class="frame-17">
+              <div class="send-message-agreement">
+                <span class="send-message-text"
+                  >By clicking on “Send Message” button, you agree to our </span
+                ><span class="privacy-policy">Privacy Policy</span
+                ><span class="send-message-text-18">, and allow </span
+                ><span class="use-information">ABDC</span
+                ><span class="send-message-text-19">
+                  to<br />use this information for marketing purposes.
+                </span>
+              </div>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+      <div class="consulting-header-1a">
+        <div class="frame-1b">
+          <div class="frame-1c">
+            <span class="frequently-asked-questions"
+              >Frequently Asked Questions</span
+            >
+          </div>
+          <div class="frame-1d">
+            <span class="your-questions-answered"
+              >Your Questions, Answered</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-first">
+          <div class="frame-1e">
+            <div class="frame-1f">
+              <span class="internal-collaboration"
+                >Can our internal development team collaborate<br />with
+                accountants at ABDC?</span
+              >
+            </div>
+            <div class="arrow-down"><div class="vector"></div></div>
+          </div>
+        </div>
+        <div class="faq-second">
+          <div class="frame-20">
+            <div class="frame-21">
+              <span class="project-environment-structure"
+                >How do you structure your project environment?</span
+              >
+            </div>
+            <div class="arrow-down-22"><div class="vector-23"></div></div>
+          </div>
+        </div>
+        <div class="faq-third">
+          <div class="frame-24">
+            <div class="frame-25">
+              <span class="info-estimate"
+                >What information do you need to prepare an estimate?</span
+              >
+            </div>
+            <div class="arrow-down-26"><div class="vector-27"></div></div>
+          </div>
+        </div>
+        <div class="faq-fourth">
+          <div class="frame-28">
+            <div class="frame-29">
+              <span class="collaboration"
+                >How can we start a collaboration together?</span
+              >
+            </div>
+            <div class="arrow-down-2a"><div class="vector-2b"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-info">
+          <div class="nav-item-2c">
+            <span class="insight">Legal</span
+            ><span class="industries">Privacy</span
+            ><span class="services-2d"><a href="contactus.html">Consultation</a></span
+            ><span class="careers">Sitemap</span
+            ><span class="events"><a href="contactus.html">Help</a></span>
+          </div>
+          <div class="socials-colour">
+            <div class="facebook"></div>
+            <div class="linkedin"></div>
+            <div class="instagram"></div>
+            <div class="x"></div>
+          </div>
+        </div>
+        <div class="footer-rfp">
+          <div class="frame-2e">
+            <div class="contact">
+              <div class="contact-2f">
+                <span class="contact-30">Contact</span>
+              </div>
+              <div class="address">
+                <span class="address-31"
+                  >Suite 101/119, Adamawa Plaza Central Business District, FCT
+                  Abuja Nigeria.<br /><br />Phone - 08166296396
+                </span>
+              </div>
+            </div>
+            <div class="media">
+              <div class="contact-32"><span class="media-33">Media</span></div>
+              <div class="address-34">
+                <span class="articles"><a href="Blog.html">Articles</a></span>
+              </div>
+            </div>
+            <div class="alumni">
+              <div class="contact-35">
+                <span class="alumni-36">Alumni</span>
+              </div>
+              <div class="address-37">
+                <span class="our-team"><a href="Aboutus.html">Our team</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="proposal">
+            <div class="contact-38">
+              <span class="request-for-proposal"><a href="contactus.html">Request for proposal</a></span>
+            </div>
+            <button class="button-39">
+              <span class="submit-rfp"><a href="contactus.html">Submit RFP</a></span>
+            </button>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="copyright">
+            <span class="all-rights-reserved"
+              >2024 ABDC Professional Services. All rights reserved.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+function submitForm() {
+    const form = document.getElementById('contactForm');
+    const formData = new FormData(form);
+    const email = 'info@abdulkadeerandco.com'; // Replace with your email address
+
+    fetch(`https://formspree.io/f/YOUR_FORM_ID`, { // Replace YOUR_FORM_ID with your actual form ID
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert('Form submitted successfully!');
+            form.reset();
+        } else {
+            return response.json().then(error => {
+                alert('There was a problem with your submission: ' + error.message);
+            });
+        }
+    }).catch(error => {
+        console.log(error);
+        alert('There was a problem with your submission.');
+    });
+}
+  </script>
+
+  </body>
+</html>
